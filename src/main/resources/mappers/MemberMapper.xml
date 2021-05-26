@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring5_mybatis_webmvc_study.mapper.MemberMapper">
+<!-- resultMap 을 추가한것. -->
+	<resultMap type="Member" id="memResult">
+		<id column="id" property="id"/>
+		<result column="email" property="email"/>
+		<result column="password" property="password"/>
+		<result column="name" property="name"/>
+		<result column="regdate" property="registerDateTime"/>
+	</resultMap>
+
+	<select id="selectByAll" resultType="Member">
+		select id,email,password, name, regdate from member
+	</select>
+	
+	<select id="selectByEmail" parameterType="Member" resultMap="memResult">
+		select id, email, password, name, regdate
+		from member 
+		where email = #{email}
+	</select>
+	
+	<select id="selectByCount" resultType="int">
+		select count(*) from member
+	</select>
+	
+	<insert id="insertMember" parameterType="Member">
+		insert into member(email,  name, password, regdate) values
+		 (#{email},#{name},#{password},#{registerDateTime})
+	</insert>
+	
+	<delete id="deleteMember" parameterType="Member">
+		delete 
+		from member
+		where email = #{email}
+	</delete>
+	
+	<update id="updateMember" parameterType="Member">
+		update member set name=#{name}, password=#{password} where email= #{email}
+	</update>
+</mapper>

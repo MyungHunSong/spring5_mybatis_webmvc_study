@@ -1,0 +1,67 @@
+[DEBUG] [2021-05-21 17:18] testSelectMemberId()
+[DEBUG] [2021-05-21 17:41] testSelectMemberId()
+[DEBUG] [2021-05-21 17:42] testSelectMemberId()
+[DEBUG] [2021-05-21 17:47] testSelectMemberId()
+[DEBUG] [2021-05-21 17:50] testSelectMemberId()
+[DEBUG] [2021-05-21 17:51] testSelectMemberId()
+[DEBUG] [2021-05-21 17:53] testSelectMemberId()
+[DEBUG] [2021-05-21 17:55] testSelectMemberId()
+[DEBUG] [2021-05-21 18:03] testSelectMemberId()
+[DEBUG] [2021-05-21 18:05] testSelectMemberId()
+[DEBUG] [2021-05-21 18:06] testSelectMemberId()
+[DEBUG] [2021-05-21 18:07] testSelectMemberId()
+[DEBUG] [2021-05-21 18:33] testDataSource()
+[DEBUG] [2021-05-21 18:33] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-21 18:33] testSelectMemberId()
+[DEBUG] [2021-05-21 18:34] testSelectMemberId()
+[DEBUG] [2021-05-21 18:34] testSelectMemberId()
+[DEBUG] [2021-05-21 18:37] testSelectMemberId()
+[DEBUG] [2021-05-21 18:37] ==>  Preparing: select id,email,password as passwd, name, regdate from member
+[DEBUG] [2021-05-21 18:37] ==> Parameters: 
+[DEBUG] [2021-05-21 18:37] testSelectMemberId()
+[DEBUG] [2021-05-21 18:37] ==>  Preparing: select id,email,password as passwd, name, regdate from member
+[DEBUG] [2021-05-21 18:37] ==> Parameters: 
+[DEBUG] [2021-05-21 18:39] testSelectMemberId()
+[DEBUG] [2021-05-21 18:39] ==>  Preparing: select id,email,password as passwd, name, regdate from member
+[DEBUG] [2021-05-21 18:39] ==> Parameters: 
+[DEBUG] [2021-05-21 18:39] testDataSource()
+[DEBUG] [2021-05-21 18:39] DataSource HikariDataSource (HikariPool-1)
+[DEBUG] [2021-05-21 18:43] testSelectMemberId()
+[DEBUG] [2021-05-21 18:43] ==>  Preparing: select id,email,password, name, regdate from member
+[DEBUG] [2021-05-21 18:43] ==> Parameters: 
+[DEBUG] [2021-05-21 18:43] testSelectMemberId()
+[DEBUG] [2021-05-21 18:43] ==>  Preparing: select id,email,password, name, regdate from member
+[DEBUG] [2021-05-21 18:43] ==> Parameters: 
+[DEBUG] [2021-05-21 18:44] testSelectMemberId()
+[DEBUG] [2021-05-21 18:44] ==>  Preparing: select id,email,password, name, regdate from member
+[DEBUG] [2021-05-21 18:44] ==> Parameters: 
+[DEBUG] [2021-05-21 18:46] testSelectMemberId()
+[DEBUG] [2021-05-21 18:46] ==>  Preparing: select id,email,password, name, regdate from member
+[DEBUG] [2021-05-21 18:46] ==> Parameters: 
+[TRACE] [2021-05-21 18:46] <==    Columns: id, email, password, name, regdate
+[TRACE] [2021-05-21 18:46] <==        Row: 10, 0517121001text.co.kr, 0517121001, 0517121001, 2021-05-17 12:10:02.0
+[TRACE] [2021-05-21 18:46] <==        Row: 28, test@test.co.kr, 1234, test, 2021-05-20 11:38:22.0
+[TRACE] [2021-05-21 18:46] <==        Row: 33, asdca@asda.co.kr, 가즈아, 1111, 2021-05-20 19:20:19.0
+[TRACE] [2021-05-21 18:46] <==        Row: 34, goongle123@goole.com, 케리미, 1111, 2021-05-21 10:16:58.0
+[TRACE] [2021-05-21 18:46] <==        Row: 35, easy12@asda.co.kr, 송갓훈, 1234, 2021-05-21 11:39:16.0
+[TRACE] [2021-05-21 18:46] <==        Row: 36, slswkzkzktl12@naver.com, 가즈아, 1111, 2021-05-21 11:39:37.0
+[TRACE] [2021-05-21 18:46] <==        Row: 37, easy12@asaa.co.kr, 호구, 1111, 2021-05-21 11:43:25.0
+[TRACE] [2021-05-21 18:46] <==        Row: 38, nawo12@kr.net, 다시다, 1534, 2021-05-21 11:48:45.0
+[TRACE] [2021-05-21 18:46] <==        Row: 40, abcd@ddt.co.kr, 아자루, 1566, 2021-05-21 14:46:52.0
+[DEBUG] [2021-05-21 18:46] <==      Total: 9
+[DEBUG] [2021-05-21 18:46] [Member [id=10, email=0517121001text.co.kr, password=0517121001, name=0517121001, registerDateTime=null], Member [id=28, email=test@test.co.kr, password=1234, name=test, registerDateTime=null], Member [id=33, email=asdca@asda.co.kr, password=가즈아, name=1111, registerDateTime=null], Member [id=34, email=goongle123@goole.com, password=케리미, name=1111, registerDateTime=null], Member [id=35, email=easy12@asda.co.kr, password=송갓훈, name=1234, registerDateTime=null], Member [id=36, email=slswkzkzktl12@naver.com, password=가즈아, name=1111, registerDateTime=null], Member [id=37, email=easy12@asaa.co.kr, password=호구, name=1111, registerDateTime=null], Member [id=38, email=nawo12@kr.net, password=다시다, name=1534, registerDateTime=null], Member [id=40, email=abcd@ddt.co.kr, password=아자루, name=1566, registerDateTime=null]]
+[DEBUG] [2021-05-21 18:51] testSelectMemberId()
+[DEBUG] [2021-05-21 18:51] ==>  Preparing: select id,email,password, name, regdate from member
+[DEBUG] [2021-05-21 18:51] ==> Parameters: 
+[TRACE] [2021-05-21 18:51] <==    Columns: id, email, password, name, regdate
+[TRACE] [2021-05-21 18:51] <==        Row: 10, 0517121001text.co.kr, 0517121001, 0517121001, 2021-05-17 12:10:02.0
+[TRACE] [2021-05-21 18:51] <==        Row: 28, test@test.co.kr, 1234, test, 2021-05-20 11:38:22.0
+[TRACE] [2021-05-21 18:51] <==        Row: 33, asdca@asda.co.kr, 가즈아, 1111, 2021-05-20 19:20:19.0
+[TRACE] [2021-05-21 18:51] <==        Row: 34, goongle123@goole.com, 케리미, 1111, 2021-05-21 10:16:58.0
+[TRACE] [2021-05-21 18:51] <==        Row: 35, easy12@asda.co.kr, 송갓훈, 1234, 2021-05-21 11:39:16.0
+[TRACE] [2021-05-21 18:51] <==        Row: 36, slswkzkzktl12@naver.com, 가즈아, 1111, 2021-05-21 11:39:37.0
+[TRACE] [2021-05-21 18:51] <==        Row: 37, easy12@asaa.co.kr, 호구, 1111, 2021-05-21 11:43:25.0
+[TRACE] [2021-05-21 18:51] <==        Row: 38, nawo12@kr.net, 다시다, 1534, 2021-05-21 11:48:45.0
+[TRACE] [2021-05-21 18:51] <==        Row: 40, abcd@ddt.co.kr, 아자루, 1566, 2021-05-21 14:46:52.0
+[DEBUG] [2021-05-21 18:51] <==      Total: 9
+[DEBUG] [2021-05-21 18:51] [Member [id=10, email=0517121001text.co.kr, password=0517121001, name=0517121001, registerDateTime=null], Member [id=28, email=test@test.co.kr, password=1234, name=test, registerDateTime=null], Member [id=33, email=asdca@asda.co.kr, password=가즈아, name=1111, registerDateTime=null], Member [id=34, email=goongle123@goole.com, password=케리미, name=1111, registerDateTime=null], Member [id=35, email=easy12@asda.co.kr, password=송갓훈, name=1234, registerDateTime=null], Member [id=36, email=slswkzkzktl12@naver.com, password=가즈아, name=1111, registerDateTime=null], Member [id=37, email=easy12@asaa.co.kr, password=호구, name=1111, registerDateTime=null], Member [id=38, email=nawo12@kr.net, password=다시다, name=1534, registerDateTime=null], Member [id=40, email=abcd@ddt.co.kr, password=아자루, name=1566, registerDateTime=null]]

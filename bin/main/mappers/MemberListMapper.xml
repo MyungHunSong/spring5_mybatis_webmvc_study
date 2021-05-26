@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="spring5_mybatis_webmvc_study.mapper.MemberListMapper">
+
+	<resultMap type="Member" id="resMember">
+		<id column="id" property="id"/>
+		<result column="regdate" property="registerDateTime"/>
+	</resultMap>
+	
+	<select id="selectMemberList" parameterType="ListCommand" resultMap="resMember">
+		select id, email, password, name, regdate 
+		  from member 
+		 where regdate between #{from} and #{to} 
+		 order by regdate desc
+	</select>
+	
+	<select id="selectById" parameterType="Member" resultMap="resMember">
+		select id, email, password, name, regdate
+		  from member 
+		 where id = #{id}
+	</select>
+</mapper>
